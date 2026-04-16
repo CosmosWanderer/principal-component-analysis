@@ -62,7 +62,7 @@ if high_corr:
         print(f"    - can be replaced with: {best}")
 
 # Visual
-fig, axes = plt.subplots(1, 2, figsize=(16, 7))  # Увеличил ширину для чисел
+fig, axes = plt.subplots(1, 2, figsize=(16, 7)) 
 
 # Metrics load on components heatmap 
 im1 = axes[0].imshow(loadings.T, cmap='Blues', aspect='auto')
@@ -103,7 +103,7 @@ plt.tight_layout()
 plt.show()
 
 # Res
-print("Results")
+print("\nResults:")
 print(f"First 3 components show {cumsum[2]:.1%} of all variations")
 print(f"  - PC1: {loadings['PC1'].idxmax()} (load {loadings['PC1'].max():.3f})")
 print(f"  - PC2: {loadings['PC2'].idxmax()} (load {loadings['PC2'].max():.3f})")
