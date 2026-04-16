@@ -100,7 +100,6 @@ for i in range(len(corr.columns)):
 plt.colorbar(im2, ax=axes[1])
 
 plt.tight_layout()
-plt.show()
 
 # Res
 print("\nResults:")
@@ -108,3 +107,5 @@ print(f"First 3 components show {cumsum[2]:.1%} of all variations")
 print(f"  - PC1: {loadings['PC1'].idxmax()} (load {loadings['PC1'].max():.3f})")
 print(f"  - PC2: {loadings['PC2'].idxmax()} (load {loadings['PC2'].max():.3f})")
 print(f"  - PC3: {loadings['PC3'].idxmax()} (load {loadings['PC3'].max():.3f})")
+
+plt.show()
