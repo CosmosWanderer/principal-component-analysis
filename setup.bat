@@ -7,7 +7,6 @@ call venv\Scripts\activate.bat
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-if not exist "output" mkdir output
 if not exist "data" mkdir data
 
 echo Setup complete

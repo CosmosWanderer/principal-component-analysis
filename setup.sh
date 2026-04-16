@@ -8,7 +8,6 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-mkdir -p output
 mkdir -p data
 
 echo "Setup complete"
